@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta lang="en">
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>
+            Contacts
+        </title>
+        <link rel="stylesheet" href="css/bootstrap/bootstrap.min.css">
+        <script src="js/Bootstrap 4/bootstrap.min.js">
+        </script>
+        <script src="js/JQuery/jquery-3.5.1.min.js">
+        </script>
+        <style>
+            #top-menu{
+                border-radius: 30px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!--Påminelse, jag kan inte tänka mig en "Contact us" 
+            websida med huvudrubriken åt sidan... :/ -->
+            <div id="top-menu" class="jumbotron text-center">
+                <div>
+                    <h1>
+                        Contact us!
+                    </h1>
+                    <h6>
+                        We are sorry to have you contact us with any issues that you might have with our services!
+                    </h6>
+                    <h6>
+                        Hope we can help you with whatever you might have a problem with!
+                    </h6>
+                    <img id="img-apologies"src="img/bow.png" alt="Person faced to user, bowing with face down.">   
+                </div>
+            </div>
+            <div>
+                <div class="form-group col-sm-4 text-right" style="float: right;">
+                    <label for="subject">
+                        <!--I decided to add the asterisk (*) to indicate 
+                        that this option is required-->
+                        <h4>
+                            Location
+                        </h4>
+                    </label>
+                    <!--location selection-->
+                    <select id="location" name="location" class="form-control" required="required">
+                        <option value="">
+                            Location
+                        </option>
+                        <option value="">
+                            Location (1)
+                        </option>
+                        <option value="">
+                            Location (2)
+                        </option>
+                        <option value="">
+                            Location (3)
+                        </option>
+                    </select>
+                    <br>
+                    <!--Address input-->
+                    <div class="form-group">
+                        <label for="Address">
+                            <h4>
+                                Address
+                            </h4>
+                        </label>
+                        <input type="text" class="form-control" id="Address" placeholder="Address" required="required"/>
+                    </div>
+                    <!--Name input-->
+                    <div class="form-group">
+                        <label for="name">
+                            <h4>
+                                Name
+                            </h4>
+                        </label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="Email">
+                            <h4>
+                                Email
+                            </h4>
+                        </label>
+                        <input type="text" class="form-control" id="Email" placeholder="Email" required="required"/>
+                    </div>
+                    <div class="form-group">
+                        <label for="name">
+                            <h4>
+                                Phone number
+                            </h4>
+                        </label>
+                        <input type="text" class="form-control" id="name" placeholder="Name" required="required"/>
+                    </div>
+                    <button type="button"class="btn btn-secondary">
+                        <h5>
+                            Submit
+                        </h5>
+                    </button>
+                </div>
+                <div class="col-sm-8" style="float: left;">
+                    <h3>
+                        This is where we are!
+                    </h3>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1033811.961303278!2d15.64195787253556!3d59.59698297925305!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f763119640bcb%3A0xa80d27d3679d7766!2sStockholm!5e0!3m2!1ssv!2sse!4v1603280925173!5m2!1ssv!2sse" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0">
+                    </iframe>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
